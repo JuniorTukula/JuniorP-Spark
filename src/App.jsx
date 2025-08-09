@@ -357,6 +357,72 @@ const App = () => {
           </div>
         </div>
       </section>
+
+       {/* Portfolio Section */}
+       <section 
+        ref={portfolioRef} 
+        id="portfolio" 
+        className="py-20 bg-gray-100 "
+      >
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 animate-on-scroll opacity-2 transition-all duration-1000 transform translate-y-40">
+            My <span className="text-indigo-800
+            ">Portfolio</span>
+          </h2>
+          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12 animate-on-scroll opacity-0 transition-all duration-1000 transform translate-y-10" style={{animationDelay: '0.2s'}}>
+            Here's a selection of my recent projects showcasing my skills in web development, UI/UX design, and mobile applications.
+          </p>
+          
+          {/* Filter Categories */}
+          <div className="flex flex-wrap justify-center mb-12 animate-on-scroll opacity-0 transition-all duration-1000 transform translate-y-10" style={{animationDelay: '0.3s'}}>
+            {categories.map((category, index) => (
+              <button
+                key={index}
+                onClick={() => setActiveFilter(category)}
+                className={`!rounded-button m-2 px-5 py-2 rounded-full transition-colors duration-300 cursor-pointer ${
+                  activeFilter === category 
+                    ? 'bg-indigo-600 text-white' 
+                    : 'bg-white text-gray-700 hover:bg-indigo-100'
+                }`}
+              >
+                {category}
+              </button>
+            ))}
+          </div>
+          
+          {/* Portfolio Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {filteredProjects.map((project, index) => (
+              <div 
+                key={project.id}
+                className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 animate-on-scroll opacity-0 transform translate-y-10"
+                style={{animationDelay: `${0.3 + index * 0.1}s`}}
+              >
+                <div className="relative overflow-hidden group">
+                  <img 
+                    src={project.image} 
+                    alt={project.title}
+                    className="w-full h-56 object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-indigo-900 bg-opacity-0 group-hover:bg-opacity-70 flex items-center justify-center transition-all duration-300 opacity-0 group-hover:opacity-100">
+                    <button className="!rounded-button bg-white text-indigo-600 hover:bg-indigo-50 px-5 py-2 rounded-lg font-medium mx-2 cursor-pointer">
+                      <i className="fas fa-eye mr-2"></i>
+                      View
+                    </button>
+                  </div>
+                </div>
+                <div className="p-6">
+                  <span className="text-xs font-semibold text-indigo-600 bg-indigo-50 px-3 py-1 rounded-full">
+                    {project.category}
+                  </span>
+                  <h3 className="text-xl font-bold mt-3 mb-2">{project.title}</h3>
+                  <p className="text-gray-600 mb-4">{project.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
       {/* animations css */}
       <style jsx>{`
         .animate-on-scroll {
