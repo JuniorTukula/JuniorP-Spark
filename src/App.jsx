@@ -423,6 +423,135 @@ const App = () => {
           </div>
         </div>
       </section>
+
+       {/* Contact Section */}
+       <section 
+        ref={contactRef} 
+        id="contact" 
+        className="py-20 bg-white"
+      >
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 animate-on-scroll opacity-0 transition-all duration-1000 transform translate-y-10">
+            Get In <span className="text-indigo-600">Touch</span>
+          </h2>
+          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12 animate-on-scroll opacity-0 transition-all duration-1000 transform translate-y-10" style={{animationDelay: '0.2s'}}>
+            Have a project in mind or want to discuss potential opportunities? I'd love to hear from you. Fill out the form below and I'll get back to you as soon as possible.
+          </p>
+          
+          <div className="flex flex-col md:flex-row">
+            {/* Contact Information */}
+            <div className="w-full md:w-2/5 mb-10 md:mb-0 animate-on-scroll opacity-0 transition-all duration-1000 transform translate-y-10" style={{animationDelay: '0.3s'}}>
+              <div className="bg-indigo-50 p-8 rounded-lg h-full">
+                <h3 className="text-2xl font-bold mb-6 text-gray-900">Contact Information</h3>
+                
+                <div className="space-y-6">
+                  <div className="flex items-start">
+                    <div className="bg-indigo-100 p-3 rounded-full text-indigo-600 mr-4">
+                      <i className="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                      <h4 className="font-medium text-gray-900 mb-1">Location</h4>
+                      <p className="text-gray-600">Blantyre,Malawi</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start">
+                    <div className="bg-indigo-100 p-3 rounded-full text-indigo-600 mr-4">
+                      <i className="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                      <h4 className="font-medium text-gray-900 mb-1">Email</h4>
+                      <p className="text-gray-600">paultukula@gmail.com</p>
+                    </div>
+                  </div>
+                  
+                  <div className="flex items-start">
+                    <div className="bg-indigo-100 p-3 rounded-full text-indigo-600 mr-4">
+                      <i className="fas fa-phone"></i>
+                    </div>
+                    <div>
+                      <h4 className="font-medium text-gray-900 mb-1">Phone</h4>
+                      <p className="text-gray-600">+265 886446457</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <h3 className="text-xl font-bold mt-10 mb-4 text-gray-900">Follow Me</h3>
+                <div className="flex space-x-4">
+                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="bg-white p-3 rounded-full text-indigo-600 hover:bg-indigo-600 hover:text-white transition-colors duration-300 cursor-pointer">
+                    <i className="fab fa-linkedin-in"></i>
+                  </a>
+                  <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="bg-white p-3 rounded-full text-indigo-600 hover:bg-indigo-600 hover:text-white transition-colors duration-300 cursor-pointer">
+                    <i className="fab fa-github"></i>
+                  </a>
+                  <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="bg-white p-3 rounded-full text-indigo-600 hover:bg-indigo-600 hover:text-white transition-colors duration-300 cursor-pointer">
+                    <i className="fab fa-twitter"></i>
+                  </a>
+                  <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" className="bg-white p-3 rounded-full text-indigo-600 hover:bg-indigo-600 hover:text-white transition-colors duration-300 cursor-pointer">
+                    <i className="fab fa-dribbble"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            
+            {/* Contact Form */}
+
+
+            
+            <div className="w-full md:w-3/5 md:pl-10 animate-on-scroll opacity-0 transition-all duration-1000 transform translate-y-10" style={{animationDelay: '0.4s'}}>
+              <form onSubmit={onSubmit} className="bg-white rounded-lg p-6 md:p-8 shadow-md">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                  <div>
+                    <label htmlFor="name" className="block text-gray-700 font-medium mb-2">Name</label>
+                    <input 
+                      type="text" 
+                      name='name'
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-300"
+                      placeholder="Your name" required
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="email" className="block text-gray-700 font-medium mb-2">Email</label>
+                    <input 
+                      type="email" 
+                      name='email'
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-300"
+                      placeholder="Your email" required
+                    />
+                  </div>
+                </div>
+                
+                <div className="mb-6">
+                  <label htmlFor="subject" className="block text-gray-700 font-medium mb-2">Subject</label>
+                  <input 
+                    type="text" 
+                    name='subject'
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-300"
+                    placeholder="Subject of your message" required
+                  />
+                </div>
+                
+                <div className="mb-6">
+                  <label htmlFor="message" className="block text-gray-700 font-medium mb-2">Message</label>
+                  <textarea 
+                    name='message'
+                    rows={5}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent transition-all duration-300 resize-none"
+                    placeholder="Your message" required
+                  ></textarea>
+                </div>
+                
+                <button 
+                  type="submit"
+                  className="!rounded-button w-full bg-indigo-600 hover:bg-indigo-400 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-300 shadow-md hover:shadow-lg cursor-pointer"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* animations css */}
       <style jsx>{`
         .animate-on-scroll {
