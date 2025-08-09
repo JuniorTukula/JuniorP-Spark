@@ -281,6 +281,82 @@ const App = () => {
           </div>
         </div>
       </section>
+
+       {/* About Section */}
+       <section 
+        ref={aboutRef} 
+        id="about" 
+        className="py-20 bg-white"
+      >
+
+
+<h1></h1>
+
+        <div className="container mx-auto px-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-10 animate-on-scroll opacity-0 transition-all duration-1000 transform translate-y-10">
+            About <span className="text-indigo-600">Me</span>
+          </h2>
+          
+          <div className="flex flex-col md:flex-row items-center">
+            {/* Image - Top on mobile, Left on desktop */}
+            <div className="w-full md:w-1 mb-10 md:mb-0 animate-on-scroll opacity-0 transition-all duration-1000 transform translate-y-10" style={{animationDelay: '0.2s'}}>
+              <div className="relative mx-auto md:mr-0 md:mr-0 max-w-sm">
+                <div ></div>
+
+
+                  
+                 <div>
+
+ 
+
+
+                 </div>
+                
+              </div>
+            </div>
+            
+            {/* Bio and Skills - Bottom on mobile, Right on desktop */}
+            <div className="w-full md:w-3/5 animate-on-scroll opacity-0 transition-all duration-1000 transform translate-y-10" style={{animationDelay: '0.4s'}}>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">My Journey</h3>
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                With over 3 years of experience in web development and design, I've helped numerous clients transform their digital presence. I specialize in creating intuitive, accessible, and visually appealing websites and applications that deliver exceptional user experiences.
+              </p>
+              <p className="text-gray-600 mb-8 leading-relaxed">
+                My approach combines technical expertise with creative problem-solving. I believe in clean code, thoughtful design, and continuous learning to stay at the forefront of web technologies and trends.
+              </p>
+              
+              <h3 className="text-2xl font-bold mb-4 text-gray-900">Skills & Expertise</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                {skills.map((skill, index) => (
+                  <div key={index} className="mb-3">
+                    <div className="flex justify-between mb-1">
+                      <span className="text-gray-700 font-medium">{skill.name}</span>
+                      <span className="text-gray-500">{skill.level}%</span>
+                    </div>
+                    <div className="w-full bg-gray-200 rounded-full h-2.5">
+                      <div 
+                        className="bg-indigo-600 h-2.5 rounded-full animate-on-scroll opacity-0 transition-all duration-1000" 
+                        style={{
+                          width: `${skill.level}%`, 
+                          animationDelay: `${0.3 + index * 0.1}s`
+                        }}
+                      ></div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+              
+              <button 
+                onClick={() => window.open('/resume.pdf', '_blank')}
+                className="!rounded-button bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-300 shadow-md hover:shadow-lg flex items-center cursor-pointer"
+              >
+                <i className="fas fa-download mr-2"></i>
+                Download Resume
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
       {/* animations css */}
       <style jsx>{`
         .animate-on-scroll {
