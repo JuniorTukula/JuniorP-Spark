@@ -73,59 +73,50 @@ const App = () => {
   const portfolioProjects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
+      title: "My Portfolio",
       category: "Web Development",
-      description: "A fully responsive e-commerce solution with payment integration",
-      image: "https://readdy.ai/api/search-image?query=Modern%20e-commerce%20website%20interface%20with%20clean%20design%2C%20showing%20product%20grid%20layout%20with%20high%20quality%20product%20images%2C%20shopping%20cart%20icon%2C%20search%20functionality%2C%20and%20navigation%20menu%2C%20professional%20UI%20design%2C%20isolated%20on%20light%20background%2C%20centered%20composition&width=600&height=400&seq=1&orientation=landscape"
+      description: "",
+      image: " "
     },
     {
       id: 2,
-      title: "Financial Dashboard",
+      title: " ",
       category: "UI/UX Design",
-      description: "Interactive dashboard for financial data visualization",
-      image: "https://readdy.ai/api/search-image?query=Financial%20dashboard%20interface%20with%20charts%2C%20graphs%2C%20and%20data%20visualization%20elements%2C%20showing%20stock%20market%20trends%2C%20investment%20portfolio%20analysis%2C%20clean%20modern%20design%20with%20blue%20accent%20colors%2C%20professional%20financial%20app%20UI%2C%20isolated%20on%20light%20background&width=600&height=400&seq=2&orientation=landscape"
+      description: " ",
+      image: " "
     },
     {
       id: 3,
-      title: "Health & Fitness App",
+      title: " ",
       category: "Mobile App",
-      description: "Cross-platform mobile application for health tracking",
-      image: "https://readdy.ai/api/search-image?query=Health%20and%20fitness%20mobile%20app%20interface%20showing%20workout%20tracking%2C%20nutrition%20logging%2C%20and%20progress%20charts%2C%20clean%20minimal%20design%20with%20green%20accents%2C%20activity%20rings%2C%20step%20counter%2C%20and%20calorie%20tracker%2C%20professional%20mobile%20UI%20design&width=600&height=400&seq=3&orientation=landscape"
+      description: " ",
+      image: " "
     },
     {
       id: 4,
-      title: "Corporate Website Redesign",
+      title: " ",
       category: "Web Development",
-      description: "Complete overhaul of corporate website with modern design",
-      image: "https://readdy.ai/api/search-image?query=Corporate%20website%20homepage%20with%20professional%20business%20design%2C%20featuring%20hero%20section%20with%20company%20imagery%2C%20navigation%20menu%2C%20call-to-action%20buttons%2C%20service%20sections%2C%20and%20testimonials%2C%20modern%20clean%20layout%20with%20blue%20corporate%20color%20scheme&width=600&height=400&seq=4&orientation=landscape"
+      description: " ",
+      image: " "
     },
     {
       id: 5,
-      title: "Travel Booking Platform",
+      title: " ",
       category: "Web Development",
-      description: "Comprehensive travel booking solution with reservation system",
-      image: "https://readdy.ai/api/search-image?query=Travel%20booking%20website%20interface%20showing%20destination%20search%2C%20flight%20and%20hotel%20booking%20options%2C%20date%20picker%2C%20beautiful%20travel%20imagery%2C%20clean%20modern%20design%20with%20teal%20accents%2C%20professional%20travel%20platform%20UI%20with%20search%20results%20and%20filtering%20options&width=600&height=400&seq=5&orientation=landscape"
+      description: " ",
+      image: " "
     },
     {
       id: 6,
-      title: "Social Media Analytics",
+      title: " ",
       category: "UI/UX Design",
-      description: "Data visualization tool for social media performance",
-      image: "https://readdy.ai/api/search-image?query=Social%20media%20analytics%20dashboard%20showing%20engagement%20metrics%2C%20follower%20growth%20charts%2C%20content%20performance%20graphs%2C%20audience%20demographics%2C%20modern%20UI%20design%20with%20purple%20accent%20colors%2C%20data%20visualization%20elements%2C%20professional%20analytics%20interface&width=600&height=400&seq=6&orientation=landscape"
+      description: " ",
+      image: " "
     }
   ];
   
   // Skills data
-  const skills = [
-    { name: "React.js", level: 90 },
-    { name: "JavaScript", level: 95 },
-    { name: "HTML/CSS", level: 90 },
-    { name: "UI/UX Design", level: 85 },
-    { name: "Node.js", level: 80 },
-    { name: "TypeScript", level: 85 },
-    { name: "Responsive Design", level: 90 },
-    { name: "GraphQL", level: 75 }
-  ];
+ //skill data here with images!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
   
   // Filter categories for portfolio
   const [activeFilter, setActiveFilter] = useState('All');
@@ -234,14 +225,14 @@ const App = () => {
      <section 
         ref={homeRef} 
         id="home" 
-        className="pt-28 pb-20 md:py-32 bg-gradient-to-br from-indigo-200 to-white"
+        className="pt-28 pb-19 md:py-32 bg-gradient-to-br from-indigo-200 to-white"
       >
         <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row items-center">
+          <div className="flex  flex-col md:flex-row items-center">
             {/* Profile Image - Top on mobile, Left on desktop */}
             <div className="w-full md:w-1/2 mb-10 md:mb-0 animate-on-scroll opacity-0 transition-all duration-1000 transform translate-y-10" style={{animationDelay: '0.2s'}}>
               <div className="relative mx-auto md:ml-0 md:mr-10 max-w-sm">
-                <div className="absolute inset-0 bg-indigo-100 rounded-lg "></div>
+                <div className="  absolute inset-0 bg-indigo-100 rounded-lg "></div>
                <img 
                   src={Mypicture} 
                   alt="Paul Banda" 
@@ -252,10 +243,10 @@ const App = () => {
             
             {/* Introduction Text - Bottom on mobile, Right on desktop */}
             <div className="w-full md:w-1/2 animate-on-scroll opacity-0 transition-all duration-1000 transform translate-y-10" style={{animationDelay: '0.4s'}}>
-              <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
+              <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-1000">
                 Hello, I'm <span className="text-indigo-600">Paul Tukula </span>
               </h1>
-              <h2 className="text-xl md:text-2xl font-medium text-gray-700 mb-6">
+              <h2 className="text-xl md:text-2xl font-medium text-gray-800 mb-6">
                 Full-Stack Developer & UI/UX Designer
               </h2>
               <p className="text-gray-600 text-lg mb-8 leading-relaxed">
@@ -316,7 +307,7 @@ const App = () => {
             </div>
             
             {/* Bio and Skills - Bottom on mobile, Right on desktop */}
-            <div className="w-full md:w-3/5 animate-on-scroll opacity-0 transition-all duration-1000 transform translate-y-10" style={{animationDelay: '0.4s'}}>
+            <div className="w-full animate-on-scroll opacity-0 transition-all duration-1000 transform translate-y-10" style={{animationDelay: '0.4s'}}>
               <h3 className="text-2xl font-bold mb-4 text-gray-900">My Journey</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">
                 With over 3 years of experience in web development and design, I've helped numerous clients transform their digital presence. I specialize in creating intuitive, accessible, and visually appealing websites and applications that deliver exceptional user experiences.
@@ -325,34 +316,12 @@ const App = () => {
                 My approach combines technical expertise with creative problem-solving. I believe in clean code, thoughtful design, and continuous learning to stay at the forefront of web technologies and trends.
               </p>
               
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">Skills & Expertise</h3>
+              <h3 className="text-2xl font-bold mb-4 text-gray-900"> </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-                {skills.map((skill, index) => (
-                  <div key={index} className="mb-3">
-                    <div className="flex justify-between mb-1">
-                      <span className="text-gray-700 font-medium">{skill.name}</span>
-                      <span className="text-gray-500">{skill.level}%</span>
-                    </div>
-                    <div className="w-full bg-gray-200 rounded-full h-2.5">
-                      <div 
-                        className="bg-indigo-600 h-2.5 rounded-full animate-on-scroll opacity-0 transition-all duration-1000" 
-                        style={{
-                          width: `${skill.level}%`, 
-                          animationDelay: `${0.3 + index * 0.1}s`
-                        }}
-                      ></div>
-                    </div>
-                  </div>
-                ))}
+               
               </div>
               
-              <button 
-                onClick={() => window.open('/resume.pdf', '_blank')}
-                className="!rounded-button bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg font-medium transition-colors duration-300 shadow-md hover:shadow-lg flex items-center cursor-pointer"
-              >
-                <i className="fas fa-download mr-2"></i>
-                Download Resume
-              </button>
+             
             </div>
           </div>
         </div>
@@ -365,12 +334,11 @@ const App = () => {
         className="py-20 bg-gray-100 "
       >
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 animate-on-scroll opacity-2 transition-all duration-1000 transform translate-y-40">
-            My <span className="text-indigo-800
-            ">Portfolio</span>
+          <h2 className=" mb-12 text-3xl  font-bold text-center  animate-on-scroll opacity-2 transition-all duration-1000 transform translate-y-10">
+            My <span className="text-indigo-800 ">Work</span>
           </h2>
-          <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12 animate-on-scroll opacity-0 transition-all duration-1000 transform translate-y-10" style={{animationDelay: '0.2s'}}>
-            Here's a selection of my recent projects showcasing my skills in web development, UI/UX design, and mobile applications.
+          <p className="text-gray-800 text-center max-w-2xl mx-auto mb-12 animate-on-scroll opacity-0 transition-all duration-1000 transform translate-y-10" style={{animationDelay: '0.2s'}}>
+            My recent projects showcasing my skills in web development, UI/UX design, and mobile applications.
           </p>
           
           {/* Filter Categories */}
@@ -435,7 +403,7 @@ const App = () => {
             Get In <span className="text-indigo-600">Touch</span>
           </h2>
           <p className="text-gray-600 text-center max-w-2xl mx-auto mb-12 animate-on-scroll opacity-0 transition-all duration-1000 transform translate-y-10" style={{animationDelay: '0.2s'}}>
-            Have a project in mind or want to discuss potential opportunities? I'd love to hear from you. Fill out the form below and I'll get back to you as soon as possible.
+            Do you have a project in mind or want to discuss potential opportunities? I'd love to hear from you. Fill out the form below, and I will get back to you as soon as possible.
           </p>
           
           <div className="flex flex-col md:flex-row">
@@ -487,9 +455,7 @@ const App = () => {
                   <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="bg-white p-3 rounded-full text-indigo-600 hover:bg-indigo-600 hover:text-white transition-colors duration-300 cursor-pointer">
                     <i className="fab fa-twitter"></i>
                   </a>
-                  <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" className="bg-white p-3 rounded-full text-indigo-600 hover:bg-indigo-600 hover:text-white transition-colors duration-300 cursor-pointer">
-                    <i className="fab fa-dribbble"></i>
-                  </a>
+                  
                 </div>
               </div>
             </div>
@@ -570,7 +536,8 @@ const App = () => {
             </div>
             
             <div className="flex space-x-4">
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="bg-gray-800 p-2 rounded-full text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer">
+               
+              {/* <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="bg-gray-800 p-2 rounded-full text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer">
                 <i className="fab fa-linkedin-in"></i>
               </a>
               <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="bg-gray-800 p-2 rounded-full text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer">
@@ -579,15 +546,13 @@ const App = () => {
               <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="bg-gray-800 p-2 rounded-full text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer">
                 <i className="fab fa-twitter"></i>
               </a>
-              <a href="https://dribbble.com" target="_blank" rel="noopener noreferrer" className="bg-gray-800 p-2 rounded-full text-gray-400 hover:text-white transition-colors duration-300 cursor-pointer">
-                <i className="fab fa-dribbble"></i>
-              </a>
+              */}
             </div>
           </div>
           
           <div className="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm mb-4 md:mb-0">
-              &copy; {new Date().getFullYear()} Paul Tukula. All rights reserved.
+              &copy; {new Date().getFullYear()} Paul Tukula. All Rights Reserved
             </p>
             <button 
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
