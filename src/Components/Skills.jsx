@@ -7,7 +7,7 @@ const skillItem = [
   {
     imgSrc: '/images/figma.svg',
     label: 'Figma',
-    desc: 'Design tool'
+    desc: 'Design Tool'
   },
   {
     imgSrc: '/images/html.svg',
