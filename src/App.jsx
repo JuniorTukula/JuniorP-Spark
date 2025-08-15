@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import Mypicture from './img/mypicture.png';
 import Swal from 'sweetalert2';
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import Skills from './Components/Skills'
 
 
 const App = () => {
@@ -116,7 +117,7 @@ const App = () => {
   ];
   
   // Skills data
- //skill data here with images!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+ 
   
   // Filter categories for portfolio
   const [activeFilter, setActiveFilter] = useState('All');
@@ -321,7 +322,7 @@ const App = () => {
                
               </div>
               
-             
+              <Skills/>
             </div>
           </div>
         </div>
