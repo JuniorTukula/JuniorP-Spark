@@ -245,10 +245,10 @@ const App = () => {
             {/* Introduction Text - Bottom on mobile, Right on desktop */}
             <div className="w-full md:w-1/2 animate-on-scroll opacity-0 transition-all duration-1000 transform translate-y-10" style={{animationDelay: '0.4s'}}>
               <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-1000">
-                Hello, I'm <span className="text-indigo-600">Paul Tukula </span>
+                Hello, I am <span className="text-indigo-600">Paul Tukula </span>
               </h1>
               <h2 className="text-xl md:text-2xl font-medium text-gray-800 mb-6">
-                Full-Stack Developer & UI/UX Designer
+                Full-Stack Web Developer & UI/UX Designer
               </h2>
               <p className="text-gray-600 text-lg mb-8 leading-relaxed">
                 I create beautiful, responsive, and user-friendly digital experiences. 
@@ -311,10 +311,21 @@ const App = () => {
             <div className="w-full animate-on-scroll opacity-0 transition-all duration-1000 transform translate-y-10" style={{animationDelay: '0.4s'}}>
               <h3 className="text-2xl font-bold mb-4 text-gray-900">My Journey</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">
-                With over 3 years of experience in web development and design, I've helped numerous clients transform their digital presence. I specialize in creating intuitive, accessible, and visually appealing websites and applications that deliver exceptional user experiences.
+              Full-stack web developer with over 3 years of experience, building complete web solutions from user interfaces to server side logic and database integration. 
+              During this time, I have learned how important it is to write clean and well-organized code that is easy to read, maintain, 
+              and improve. I always try to follow best practices and keep my work simple and efficient. 
+              I believe that learning never stops, especially in technology, so I make it a habit to explore new tools, frameworks, 
+              and techniques. This helps me stay up to date with the latest trends in web development and allows me to build modern, 
+              high-quality solutions that meet user needs and business goals.
               </p>
               <p className="text-gray-600 mb-8 leading-relaxed">
-                My approach combines technical expertise with creative problem-solving. I believe in clean code, thoughtful design, and continuous learning to stay at the forefront of web technologies and trends.
+              Alongside my technical skills, I value collaboration and believe that strong teamwork plays a key role in successful projects.
+               I communicate clearly, listen actively, and always aim to support those I work with. Whether I am partnering with fellow developers,
+                designers, or clients, I focus on making sure everyone is aligned and working toward the same goals. 
+                I am confident contributing in team discussions, offering constructive feedback, and tackling challenges together. 
+                To me, good communication and a positive mindset are just as important as writing great code 
+                when it comes to building high-quality software.Ultimately, I am passionate about applying my skills to create meaningful solutions that 
+                make a positive and lasting impact in the world.
               </p>
               
               <h3 className="text-2xl font-bold mb-4 text-gray-900"> </h3>

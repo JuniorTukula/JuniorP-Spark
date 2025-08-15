@@ -57,7 +57,7 @@ const Skills = () => {
       <div className="container">
 
         <h2 className="headline-2">
-          Essential Tools I use
+          Tools behinde my work
         </h2>
         <p className="">
           Discover the powerful tools and technologies i
