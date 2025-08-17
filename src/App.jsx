@@ -167,7 +167,7 @@ const App = () => {
     <div className="font-sans text-gray-800 bg-gray-50">
       {/* Header/Navigation */}
       <header className="fixed top-0 left-0 w-full bg-white bg-opacity-90 backdrop-blur-sm shadow-sm z-50">
-        <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+        <div className="container mx-auto px-4 py-5 flex justify-between items-center">
           <a href="#home" className="text-2xl font-bold text-indigo-600">Spark</a>
           
           {/* Mobile Menu Button */}
@@ -226,10 +226,10 @@ const App = () => {
      <section 
         ref={homeRef} 
         id="home" 
-        className="pt-28 pb-19 md:py-32 bg-gradient-to-br from-indigo-200 to-white"
+        className="pt-10 pb-15 md:py-32 bg-gradient-to-br from-indigo-200 to-white"
       >
         <div className="container mx-auto px-4">
-          <div className="flex  flex-col md:flex-row items-center">
+          <div className="flex flex-col md:flex-row items-center">
             {/* Profile Image - Top on mobile, Left on desktop */}
             <div className="w-full md:w-1/2 mb-10 md:mb-0 animate-on-scroll opacity-0 transition-all duration-1000 transform translate-y-10" style={{animationDelay: '0.2s'}}>
               <div className="relative mx-auto md:ml-0 md:mr-10 max-w-sm">
@@ -237,7 +237,7 @@ const App = () => {
                <img 
                   src={Mypicture} 
                   alt="Paul Banda" 
-                  className="relative z-10 rounded-lg shadow-lg object-cover w-full h-auto"
+                  className=" relative z-10 rounded-lg shadow-lg object-cover w-full h-auto"
                 />
               </div>
             </div>
@@ -308,7 +308,7 @@ const App = () => {
             </div>
             
             {/* Bio and Skills - Bottom on mobile, Right on desktop */}
-            <div className="w-full animate-on-scroll opacity-0 transition-all duration-1000 transform translate-y-10" style={{animationDelay: '0.4s'}}>
+            <div className="w-full animate-on-scroll opacity-4 transition-all duration-1000 transform translate-y-10" style={{animationDelay: '0.4s'}}>
               <h3 className="text-2xl font-bold mb-4 text-gray-900">My Journey</h3>
               <p className="text-gray-600 mb-6 leading-relaxed">
               Full-stack web developer with over 3 years of experience, building complete web solutions from user interfaces to server side logic and database integration. 
@@ -318,7 +318,7 @@ const App = () => {
               and techniques. This helps me stay up to date with the latest trends in web development and allows me to build modern, 
               high-quality solutions that meet user needs and business goals.
               </p>
-              <p className="text-gray-600 mb-8 leading-relaxed">
+              <p className="text-gray-600 mb-8 leading-relaxed animate-on-scroll opacity-4 transition-all duration-1000 transform translate-y-10">
               Alongside my technical skills, I value collaboration and believe that strong teamwork plays a key role in successful projects.
                I communicate clearly, listen actively, and always aim to support those I work with. Whether I am partnering with fellow developers,
                 designers, or clients, I focus on making sure everyone is aligned and working toward the same goals. 

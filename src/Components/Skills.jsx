@@ -56,15 +56,10 @@ const Skills = () => {
     <section className="section">
       <div className="container">
 
-        <h2 className="headline-2">
+        <h2 className=" text-3xl md:text-4xl font-bold mb-12 text-3xl  font-bold text-center  animate-on-scroll opacity-2 transition-all duration-1000 transform translate-y-10">
           Tools behinde my work
         </h2>
-        <p className="">
-          Discover the powerful tools and technologies i
-          use to create exceptional,
-          high-performing websites and applications.
-
-        </p>
+        <div className="animate-on-scroll opacity-2 transition-all duration-1000 transform translate-y-10">
 
         <div className="grid gap-3 grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))]">
           {
@@ -79,10 +74,12 @@ const Skills = () => {
             ))
           }
         </div>
+        </div>
 
       </div>
 
     </section>
+    
   );
 };
 
